@@ -17,7 +17,7 @@
 	$user_data = new User();
 
 	// Hazudunk jól :-D
-	header("X-Powered-By: ASP 45.8.7");
+	header("X-Powered-By: Hack 45.8.7");
 
 	// Requires
 	require_once($b_dir . 'inc/functions.php');
