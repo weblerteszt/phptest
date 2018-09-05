@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteBase /php_hsz2/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule "^(\w+)/?$" index.php?page=$1 [L]
+RewriteRule "^images/katica(\d+)\.jpg$" pic.php?azon=$1 [L]
+RewriteRule "^teszt\.js(\?ver=\d+(\.\d+)+)?$" teszt.js.php?ie=false [L]
+RewriteRule "^teszt_ie\.js(\?ver=\d+(\.\d+)+)?$" teszt.js.php?ie=true [L]
